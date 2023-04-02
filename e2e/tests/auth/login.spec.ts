@@ -46,6 +46,6 @@ for (const user of users) {
   test(`${user} should be able to log in using API`, async ({page}) => {
     const user = await loginPage.loginByApi();
 
-    console.log(user);
+    expect(user).toBeDefined();
   })
 }
