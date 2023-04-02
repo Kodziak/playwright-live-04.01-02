@@ -156,7 +156,7 @@ const ListDemo = () => {
                 <Button label="New" icon="pi pi-plus" className="p-button-success mr-2" onClick={() => open()} />
             </div>
             <div className="col-6" style={{ textAlign: 'right', flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-                <InputText style={{ marginRight: 8 }} type="search" onInput={(e) => setSearchText(e.target.value)} placeholder="Search..." />
+                <InputText style={{ marginRight: 8 }} type="search" onInput={(e) => setSearchText(e.target.value)} placeholder="Search..." data-testid="events-search-input" />
                 <DataViewLayoutOptions layout={layout} onChange={(e) => setLayout(e.value)} />
             </div>
         </div>

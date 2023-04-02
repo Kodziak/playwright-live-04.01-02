@@ -13,6 +13,8 @@ export default class UserService {
 
     getUserById(login) {
         const index = db.getIndex('/users', login)
+
+        console.log({index});
         if (index < 0) return null
         return db.getData(`/users[${index}]`);
     }
