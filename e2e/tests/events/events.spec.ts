@@ -13,10 +13,8 @@ test.beforeEach(async ({page}) => {
 test('User should be able to search through events', async ({page}) => {
   await eventsPage.searchEvents('Salt Wave');
 
-  // const events = await eventsPage.getEvents();
-  const events = await eventsPage.getEventsByApi();
-
-  console.log(events);
+  const events = await eventsPage.getEvents();
+  // const events = await eventsPage.getEventsByApi();
 
   expect(events).toContainEqual({
     tag: 'festival',
