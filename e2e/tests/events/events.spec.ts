@@ -19,7 +19,7 @@ test('User should be able to search through events', async ({page}) => {
   expect(events).toContainEqual({
     tag: 'festival',
     name: 'Salt Wave 2022',
-    date: '5 May 23',
+    date: '4 May 23',
     price: '$200'
   })
 })

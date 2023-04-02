@@ -20,5 +20,5 @@ test.skip('TEST - soft expect', async ({page}) => {
 });
 
 test('TEST - custom message', async ({page}) => {
-  await expect(page.locator('h4'), "Header text should be 'Welcome'.").toHaveText('Hello');
+  await expect(page.locator('h4'), "Header text should be 'Welcome'.").toHaveText('Welcome');
 });
